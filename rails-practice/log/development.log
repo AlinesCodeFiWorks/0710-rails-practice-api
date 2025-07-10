@@ -1,0 +1,106 @@
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='RailsPractice'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='RailsPractice'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='RailsPractice'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-07-10 23:23:36.020777', '2025-07-10 23:23:36.020780') RETURNING "key" /*application='RailsPractice'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsPractice'*/[0m
+Migrating to CreateBooks (20250710232032)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "books" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "author" varchar, "year" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='RailsPractice'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250710232032') RETURNING "version" /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsPractice'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-07-10 18:29:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsPractice'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/aline/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/aline/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 1547ms (Views: 9.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 208.8ms)
+
+
+Started GET "/icon.png" for 127.0.0.1 at 2025-07-10 18:29:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 18:30:10 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsPractice'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/aline/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/aline/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.6ms | GC: 0.0ms)
+Completed 200 OK in 829ms (Views: 7.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 50.2ms)
+
+
+Started GET "/icon.png" for 127.0.0.1 at 2025-07-10 18:30:11 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 18:38:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsPractice'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/aline/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/aline/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 272ms (Views: 6.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 30.1ms)
+
+
+Started GET "/books/" for ::1 at 2025-07-10 18:38:31 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/books"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 18:39:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsPractice'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/aline/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/aline/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 211ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 19.8ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsPractice'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsPractice'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsPractice'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsPractice'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mBook Create (1.7ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "year", "created_at", "updated_at") VALUES ('The Stars'' Tennis Balls', 'Marian Kilback', 1620, '2025-07-10 23:47:18.024826', '2025-07-10 23:47:18.024826') RETURNING "id" /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mBook Create (1.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "year", "created_at", "updated_at") VALUES ('Great Work of Time', 'Corliss Rice', 1749, '2025-07-10 23:47:18.036005', '2025-07-10 23:47:18.036005') RETURNING "id" /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mBook Create (1.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "year", "created_at", "updated_at") VALUES ('Ah, Wilderness!', 'Trinidad Treutel', 1567, '2025-07-10 23:47:18.039869', '2025-07-10 23:47:18.039869') RETURNING "id" /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mBook Create (1.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "year", "created_at", "updated_at") VALUES ('Noli Me Tangere', 'Lance Beier', 1852, '2025-07-10 23:47:18.043612', '2025-07-10 23:47:18.043612') RETURNING "id" /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mBook Create (1.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "year", "created_at", "updated_at") VALUES ('Arms and the Man', 'Ms. Traci Kuvalis', 1618, '2025-07-10 23:47:18.047525', '2025-07-10 23:47:18.047525') RETURNING "id" /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mBook Create (1.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "year", "created_at", "updated_at") VALUES ('The Moon by Night', 'Dr. Dimple Thompson', 1666, '2025-07-10 23:47:18.051800', '2025-07-10 23:47:18.051800') RETURNING "id" /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mBook Create (1.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "year", "created_at", "updated_at") VALUES ('Of Human Bondage', 'Gala Douglas', 1793, '2025-07-10 23:47:18.055547', '2025-07-10 23:47:18.055547') RETURNING "id" /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mBook Create (1.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "year", "created_at", "updated_at") VALUES ('Ego Dominus Tuus', 'Scottie Gutmann', 1862, '2025-07-10 23:47:18.059333', '2025-07-10 23:47:18.059333') RETURNING "id" /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mBook Create (1.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "year", "created_at", "updated_at") VALUES ('The Monkey''s Raincoat', 'Wiley Harris DVM', 1866, '2025-07-10 23:47:18.063140', '2025-07-10 23:47:18.063140') RETURNING "id" /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='RailsPractice'*/[0m
+  [1m[36mBook Create (1.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "year", "created_at", "updated_at") VALUES ('That Hideous Strength', 'Cassey Willms', 2003, '2025-07-10 23:47:18.067842', '2025-07-10 23:47:18.067842') RETURNING "id" /*application='RailsPractice'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='RailsPractice'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-07-10 18:47:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsPractice'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/aline/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/aline/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 200 OK in 263ms (Views: 3.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 24.4ms)
+
+
+Started GET "/books/1" for ::1 at 2025-07-10 18:47:50 -0500
+Processing by BooksController#show as */*
+  Parameters: {"id" => "1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = 1 LIMIT 1 /*action='show',application='RailsPractice',controller='books'*/[0m
+  ↳ app/controllers/books_controller.rb:3:in 'BooksController#show'
+Completed 200 OK in 66ms (Views: 0.9ms | ActiveRecord: 2.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
