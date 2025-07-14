@@ -112,3 +112,42 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 300ms (Views: 4.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 37.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2025-07-13 23:52:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='RailsPractice'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/aline/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/aline/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 432ms (Views: 15.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 25.6ms)
+
+
+Started GET "/icon.png" for 127.0.0.1 at 2025-07-13 23:52:41 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+Started GET "/books" for ::1 at 2025-07-13 23:52:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/books"):
+  
+Started GET "/books" for ::1 at 2025-07-13 23:52:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/books"):
+  
+Started GET "/books" for ::1 at 2025-07-13 23:56:31 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/books"):
+  
+Started GET "/book" for ::1 at 2025-07-13 23:57:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/book"):
+  
+Started GET "/" for ::1 at 2025-07-13 23:57:10 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/aline/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/aline/.rbenv/versions/3.4.2/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2025-07-13 23:57:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/books"):
+  
